@@ -55,7 +55,7 @@ def login():
 @auth_bp.route('/logout', methods=['POST'])
 def logout():
     response = make_response(jsonify({'success': True}))
-    response.set_cookie('auth_token', '', expires=0)
+    response.set_cookie('auth_token', '', expires=0, httponly=True, secure=True, samesite='None')
     return response
 
 @auth_bp.route('/me', methods=['GET'])
