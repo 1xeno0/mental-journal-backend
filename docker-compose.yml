@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  backend:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./data:/data
+    environment:
+      - DATABASE_URL=sqlite:////data/serene.db
+      - JWT_SECRET=dev-secret-change-me
+      - OPENAI_API_KEY=${OPENAI_API_KEY}

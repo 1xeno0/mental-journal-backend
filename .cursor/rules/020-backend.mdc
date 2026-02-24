@@ -1,0 +1,24 @@
+---
+alwaysApply: true
+---
+All protected routes must verify JWT.
+
+All database queries must filter by user_id.
+
+Passwords must be hashed using bcrypt.
+
+No raw SQL unless explicitly required.
+
+All endpoints must return structured JSON.
+
+Errors must follow:
+{
+  "error": "...",
+  "code": "ERROR_CODE"
+}
+
+AI responses must:
+- Be 1–2 sentences
+- Be non-clinical
+- Avoid diagnosis
+- Include trigger-word disclaimer when necessary

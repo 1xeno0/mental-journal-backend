@@ -1,0 +1,20 @@
+---
+alwaysApply: true
+---
+Backend must use:
+- Flask
+- SQLAlchemy
+- SQLite
+- JWT authentication via httpOnly cookies
+
+Frontend must use:
+- Next.js (App Router)
+- API calls to /api/* only
+
+No additional frameworks unless explicitly requested.
+No Redis.
+No Celery.
+No background workers.
+No microservices.
+
+Single-container deployment is required.

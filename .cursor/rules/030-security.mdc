@@ -1,0 +1,14 @@
+---
+alwaysApply: true
+---
+Never expose secrets in frontend.
+
+Never store JWT in localStorage.
+
+Use httpOnly cookies for auth.
+
+Never return password hashes.
+
+Validate all input server-side.
+
+Sanitize AI prompts.

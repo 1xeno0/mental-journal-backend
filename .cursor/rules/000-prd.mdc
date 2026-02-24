@@ -1,0 +1,10 @@
+---
+alwaysApply: true
+---
+The Backend PRD is the single source of truth.
+
+Do not invent features.
+Do not expand scope.
+Do not change requirements unless explicitly instructed.
+
+Every implementation must match the Backend PRD exactly.

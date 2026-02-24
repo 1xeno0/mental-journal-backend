@@ -1,0 +1,11 @@
+---
+alwaysApply: true
+---
+App must run via:
+docker-compose up
+
+Database must persist via Docker volume.
+
+Do not require manual database setup.
+
+No external services required except AI provider.
